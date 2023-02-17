@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: cursive;
+}
+#container{
+    border: 2px solid;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px 1fr;
+}
+aside{
+    /* border: 2px solid red; */
+    background-color: black;
+}
+main{
+    /* border: 2px solid blue; */
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: red;
+}
+.aside-items{
+    display: flex;
+    justify-content: center;
+}
+.aside-items ul{
+    /* border: 2px solid black; */
+    margin-top: 8rem;
+    width: 100%;
+}
+.aside-items ul li{
+    text-align: center;
+    list-style: none;
+    margin-top: 4rem;
+    font-size: 2rem;
+    width: 100%;
+    color: white;
+}
+.aside-items ul li:hover{
+    background-color: darkslategray;
+    color: white;
+    cursor: pointer;
+}
+
+form{
+    /* border: 2px solid black; */
+    max-width: 950px;
+    margin: auto;
+
+}
+form input[type="search"]{
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: black;
+}
+form input[ type="search"]::placeholder{
+    font-size: 20px;
+    color: white;
+}
+section{
+    /* border: 2px solid blue; */
+    margin-top: 4rem;
+}
+.details{
+    /* border: 2px solid black; */
+    max-width: 1200px;
+    margin: auto;
+}
+.details h1{
+    font-size: 25px;
+    color: white;
+    margin-left: 7rem;
+}
+.details h1:hover{
+    cursor: pointer;
+    transition: all 1.2s;
+    transform: scale(1.2);
+}
+
+.content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    border-left: 0;
+    border-right:0;
+    width: 30%;
+    height: 40vh;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.box img{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.box:hover{
+    transform: rotateY(180deg);
+    background: black;
+    cursor: pointer;
+}
+.card-back{
+    margin-top: 5rem;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.card-back h1, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
